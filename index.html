@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lecture2</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+    	.nav-link{
+    		color: white;
+    		font-size: 25px;
+    		padding-left: 50px;
+    	}
+
+    	.header-banner{
+    		min-height: 500px;
+    		background: url('assets/img/doctor.jpg') no-repeat;
+    		background-size: cover;
+
+
+    	}
+
+    	.card-body h3{
+    		text-align: center;
+    		border-bottom: 1px solid grey;
+    		font-size: 20px;
+    		padding-top: 10px;
+    		padding-bottom: 10px;
+    	}
+
+    	.card-body p{
+    		font-size: 15px;
+    	}
+
+    	.question {
+    		background-image: url(assets/img/bl.png);
+    	}
+    	.question h3{
+    		color: white;
+    		text-align: center;
+    	}
+
+    	.map-content{
+    		height: 500px;
+    		width: 400px;
+    		position: absolute;
+    		right: 200px;
+    		background:rgba(0,0,0,0.6);
+    		text-align: center;
+
+    	}
+
+    	
+    	
+
+    	
+    </style>
+</head>
+<body>
+        <!-- header -->
+	<div class="container">
+		<div class="row py-4 px-4 "> 
+
+			<div class="col-sm-3"> 
+				<p>
+					<img src="assets/img/logo.jpg" alt="logo" width="200px "  style="margin-top: -14px">
+				</p>
+			</div> <!-- col-sm-3 -->
+
+			<div class="col-sm-3">
+				<p> Yurist, Yurist <br>
+					Advokat, Advokat <br>
+					Sudiya, Sudya <br>
+				</p>
+			 </div> <!-- col-sm-3 -->
+
+			<div class="col-sm-3"> 
+				<p>
+					 <i class="fa fa-map-marker" aria-hidden="true"></i>Xorazm viloyati hazorasp 
+					 <br>
+					 <i class="fa fa-clock-o" aria-hidden="true"></i>Hours: 9:00-18:00
+				</p>
+			</div> <!-- col-sm-3 -->
+
+			<div class="col-sm-3">
+				<p style="font-size: 20px">
+					<i class="fa fa-phone" aria-hidden="true"></i> 99899-999-99-99
+				<br>
+				<button class="btn btn-primary btn-block mt-2"> Order</button>
+				</p>
+			 </div> <!-- col-sm-3 -->
+		</div> <!-- .row -->
+	</div> <!-- .container -->
+
+	<!-- Navbar -->
+	<div class="containerfluid btn-primary " style="margin-top: -20px;" >
+		<div class="container" >
+			<ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: ">Main</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">Questions</a>
+              </li>
+              <li class="nav-item">
+              	 <a class="nav-link" href="#">Contact</a>
+               
+              </li>
+            </ul> <!-- Navbar -->
+		</div><!-- .container -->
+	</div> <!-- .container-fluid -->
+
+	<!-- Header Banner -->
+	<div class="container-fluid header-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 " style="margin-top: 100px;">
+					<h2>Hello World</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatem, quis repudiandae possimus, alias tenetur culpa maxime asperiores? Rerum adipisci aspernatur asperiores nulla deserunt ratione, iure alias exercitationem quas, error.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<a href="" class="btn btn-info mr-2 px-4"> Order</a>
+					<a href="" class="btn btn-link px-4 "> More...</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Servise -->
+	<div class="container-fluid">
+		<div class="container">
+			<h2 class="mt-4 text-info pl-3">Services</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card-services">
+						<div class="card-body">
+							<img src="assets/img/med.jpg" alt="med" style="width: 220px;">
+							<h3>About medicine</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni enim quasi, vel, maiores sint consectetur officia corrupti sit autem necessitatibus minus alias perspiciatis? Doloremque, nisi. Perspiciatis assumenda, sapiente nulla maiores.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- row -->
+			<center > <a href="" class="button btn-info "  > <i class="fa fa-check" aria-hidden="true"></i>  Make Order</a></center>
+		</div> <!-- .container -->
+	</div> <!-- .container-fluid -->
+
+	<div class="container-fluid question">
+		<div class="container mt-4 px-4 py-4">
+			<div class="row">
+				<div class="col-md-6">
+				<h3>Questions for specials</h3> 
+			    </div>
+			    <div class="col-md-6">
+				<button class="btn btn-warning"> Questions</button>
+			    </div>
+			</div>
+			
+		</div>
+	</div> <!-- container-fluid question -->
+
+	<div class="container-fluid px-0 py-0 " id="map">
+		<div class="map-content px-4 py-4">
+			<h1 class="text-white py-2">Contacts</h1>
+			<p class="text-white py-2"> Omorsk Dom3</p>
+			<h3 class="text-white py-2"> 9999-876-82-77</h3>
+			<p class="text-white py-2"> info@gmail.com</p>
+			<a href="" class="btn btn-warning  btn-block"> Contact us</a>
+		</div>
+
+		<div style="100%"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=berkeley%20oceanfront.%20hotel&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+		
+	</div>
+
+	<!-- Footer -->
+	<div class="container-fluid  bg-info ">
+		<div class="container px-4 py-4">
+			<div class="row">
+				<div class="col-sm-3">
+                <h3 class="text-white float-left mr-2">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </h3>
+                <p class="text-white pt-1"> Leave Massege to pecials</p>
+            </div>
+
+				<div class="col-md-5">
+					<form action="">
+						<div class="input-group ">
+							<input type="text" placeholder="Leave a massage">
+							<div class="input-group-append">
+								<button class="btn-warning"> <i class="fa fa-check" aria-hidden="true"></i>Save</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4"> 
+					<p class="float-left pt-2 mr-2 text-white">999-99-999-18-88</p>
+					<button class=" btn btn-info float-right pt-2">Order</button>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
